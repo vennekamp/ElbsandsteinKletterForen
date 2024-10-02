@@ -1,0 +1,251 @@
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+tr {
+    background-color: #bdcdda;
+}
+
+tr:hover {
+    background-color: #cdddda;
+}
+
+tr:nth-child(even) {
+    background-color: #5bb5ff;
+}
+
+tr:nth-child(even):hover {
+    background-color: #6bc5ff;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+td.draggable {
+    vertical-align: top;
+}
+
+.draggable {
+    cursor: grab;
+    transition: transform 0.3s ease;
+    /* Add transition for animation */
+}
+
+td.draggable:hover {
+    border: 2px dashed rgba(164, 164, 164, .75);
+}
+
+.dragging {
+    opacity: 0.5;
+    transform: scale(0.85);
+}
+
+.over {
+    border: 2px dashed #000;
+}
+
+.placeholder_cell {
+    background-color: #f0f0f0;
+    padding: 0px;
+    margin: 5px 0;
+    height: 20px;
+    text-align: center;
+}
+
+.animate {
+    animation: blink 0.3s;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.85;
+        transform: scale(1.1);
+    }
+}
+
+table.listview {
+    background-color: #fcfcfc;
+    color: #061616;
+    white-space: nowrap;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid black;
+    margin: 0;
+    width: 100%;
+}
+
+.listview caption {
+    text-align: left;
+    font-family: Georgia, "Times New Roman", serif;
+    color: DarkGreen;
+    background: transparent;
+    padding: 0.375em 0.25em 0.5em 0;
+    font-variant: small-caps;
+}
+
+.listview th {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /*requird to make sticky work*/
+    font-weight: normal;
+    border-bottom: 1px solid #d5d5d5;
+    border-right: 1px solid #dedfe7;
+    resize: horizontal;
+    overflow: hidden;
+    /* required to make resize work */
+    text-align: left;
+    padding-left: 0.5em;
+    position: sticky;
+    top: 0;
+    /* required to make sticky work ( https://stackoverflow.com/a/43707215) */
+}
+
+.listview th:hover {
+    background: #555;
+    background: linear-gradient(180deg, #666 0%, #777 25%, #888 36%, #888 64%, #777 75%, #666 100%);
+    border-right: 1px solid #6bb8e6;
+    border-bottom: 1px solid #99c6e3;
+}
+
+.listview td {
+    padding-left: 0.3em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 20vw;
+    vertical-align: top;
+}
+
+.listview td:hover {
+    overflow: visible;
+    white-space: unset;
+}
+
+.very_good {
+    background-color: darkgreen;
+}
+
+.good {
+    background-color: lightgreen;
+}
+
+.normal {
+    background-color: gray;
+}
+
+.poor {
+    background-color: lightsalmon;
+}
+
+.middle-column {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.unemphasized_field_value .field_label {
+    font-weight: normal;
+    font-size: small;
+}
+
+.field_value {
+    font-weight: bold;
+    font-size: medium;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.emphasized_field_value {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+div.rangeLabel {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 550px;
+    align-content: left;
+}
+
+
+div.rangeLabel.label {
+    font-size: 1rem;
+    color: #333;
+  }
+
+input[type="range"] {
+    width: 400px;
+    margin: 0;
+    float: left;
+}
+
+datalist {
+    width: 400px;
+    float: left;
+}
+
+#my-detents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#myPlotlyDiv {
+    margin-left: 600px;
+}
+
+#submit
+#button
+.input[type="submit"]
+.button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submit
+#button
+.input[type="submit"]
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+}
+
+#submit
+#button
+.input[type="submit"]
+.button:hover {
+    background-color: #04AA6D;
+    color: white;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
