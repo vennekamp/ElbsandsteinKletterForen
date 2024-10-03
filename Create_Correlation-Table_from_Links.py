@@ -1,6 +1,6 @@
 import sqlite3
 from summit_table_helper import get_files_dir
-
+## Nur zum Testen 
 gipfel = "Eremit"
 corr_coeff = str(70.0)
 save_dir = get_files_dir("")

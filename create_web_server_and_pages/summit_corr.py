@@ -167,7 +167,7 @@ def summit(summit_coeff):
     c.close()
     _summit_no = summit_name_to_summit_no(aSummit)
     print(_summit_no)
-    output = template('make_route_table_3', rows=result, cutOff=aCorrCoeffLimit, summit_no=_summit_no)
+    output = template('make_route_table', rows=result, cutOff=aCorrCoeffLimit, summit_no=_summit_no)
     return output
 
 

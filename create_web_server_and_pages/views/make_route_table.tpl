@@ -25,7 +25,7 @@
 		<form method="PUT" action="/summit">
 		<button id="addRow" type="button" class="button">Create a new empty Row</button>
 		<button id="removeRow" type="button" class="button">Remove an empty Row</button>
-        <input type="submit" value="Neu laden..!" class="submit"/>
+		<br>
 				<select id="filter_summit" name="filter_summit">
 					<option value="">Bitte Gipfel wählen</option>
 					<optgroup label="Bielatal">
@@ -1201,6 +1201,13 @@
 						<option value="1488">Rochlitz Klettergarte - Schattenwand</option>
 					</optgroup>
 				</select>
+				
+        <input type="submit" value="==> Neu laden..!!" class="submit"
+		style="	border: none; color: black; padding: 4px 8px; 
+				text-align: center; text-decoration: none; 
+				display: inline-block; font-size: 14px; 
+				margin: 20px; transition-duration: 0.4s; cursor: pointer; 
+				background-color: lightgreen; border: 2px solid #04AA6D;"/>
 			
 			<div class="rangeLabel">
 				<nobr><label for="cutoffCoerr">Min. Corr.Coeff.</label>[<output>70</output>%]:</nobr>
@@ -1225,7 +1232,7 @@
 	</div>
 
 <table border="1" id="content-table">
-<thead>
+<thead style="position: sticky; top: 50px; z-index: 2;">
 	<tr>
 		<th>SBB-Database</th>
 		<th>Corr. Coeff.</th>
